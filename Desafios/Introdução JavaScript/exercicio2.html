@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+/*
+2º exercício
+Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+function pares(x, y) {
+ // código aqui
+}
+pares(32, 321);
+*/
+            function pares(x, y){
+                if(x > y){
+                    return 'O segundo valor deve ser maior que o primeiro';
+                } else{
+
+                    while(x < y){
+                        var resto = x %2;
+                        if(resto == 0){
+                            console.log(x);
+                        }
+                        x++;
+                    }
+                }
+            }
+
+            console.log(pares(32, 321));
+
+        </script>
+    </body>
+</html>
